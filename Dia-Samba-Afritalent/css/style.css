@@ -1,0 +1,105 @@
+:root {
+    primary-color: #1e3a8a;
+    secondary-color: #14b8a6;
+    dark-color: #0f172a;
+    light-color: #f8fafc;
+    text-color: #334155;
+    border-radius: 10px;
+    spacing: 1rem;
+    title-font: 'Poppins', sans-serif;
+    body-font:'Roboto', sans serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(body-font);
+    color: var(text-color);
+    background-color: #f1f5f9;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(title-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+
+.navbar{
+    background-color: var(primary-color)!important;
+    padding: 15px 0;
+}
+
+.navbar-brand{
+    font-family: var(title-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav-link{
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: #14b8a6 !important;
+}
+
+section{
+    padding: 40px 0;
+}
+.service-card{
+    transition: 0.3s;
+}
+.service-card:hover{
+    transform: translateY(8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15g);
+}
+.card{
+    border: none;
+    border-radius: var(border-radius);
+    transition: 0,3s;
+}
+.card:hover{
+    transform:translateY(5px);
+}
+.btn-primary{
+    background-color: var(secondary-color);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #0f766e;
+}
+
+blockquote{
+    font-style: italic;
+    color: #555;
+}
+footer{
+    background-color: var(dark-color);
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: var(secondary-color);
+}
+@media(max-width:768px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+}
