@@ -70,6 +70,9 @@ section{
 .card:hover{
     transform:translateY(5px);
 }
+.row{
+    row-gap: 20px;
+}
 .btn-primary{
     background-color: var(secondary-color);
     border: none;
@@ -102,4 +105,23 @@ footer a:hover{
     .navbar-nav{
         text-align: center;
     }
+}
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimax(250px,1fr));
+    gap: 20px;
+}
+.bento-item{
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.bento-item:hover{
+    transform: translateY(-8px);
+}
+.bento-item h1{
+    font-size: 3rem;
+    font-weight: bold;
 }
