@@ -164,6 +164,10 @@ footer a:hover{
 .dark-mode .navbar{
     background-color: #000 !important
 }
+.dark-mode .icon-shape{
+    background-color: #1e1e1e;
+    color: white;
+}
 .dark-mode footer{
     background-color: #000 !important;
     color: white;
@@ -186,4 +190,14 @@ footer a:hover{
     display: none;
     z-index: 1000;
     border-radius: 50%;
+}
+
+.fade-section{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+.fade-section.show{
+    opacity: 1;
+    transform: translateY(0);
 }
