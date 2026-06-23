@@ -12,16 +12,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- header -->
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
             <div class="container"> 
-                <img src="images/logo.jpeg" height="55px" width="55px" alt="">
+                <img src="images/logo.jpeg" height="55px" width="55px" alt="logo">
                 <a class="navbar-brand fw-bold" href="freelances.html">
                     Afritalent </a>
                 <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -37,21 +40,29 @@
             </div>
         </nav>
     </header>
-    <section class="container text-center my-5">
+
+    <!-- présentation -->
+
+    <section class="container text-center my-5 fade-section">
         <h1>Découvrez nos freelances</h1>
         <p>
             Des professionnels qualifiés préts à vous accompagner  dans la réalisation de vos projets.
         </p>
+        <!-- filtrage -->
         <button class="filter-btn btn btn-primary" data-filter="all">Tous</button>
         <button class="filter-btn btn btn-primary" data-filter="web">Développement</button>
         <button class="filter-btn btn btn-primary" data-filter="design">Design</button>
         <button class="filter-btn btn btn-primary" data-filter="marketing">Marketing</button>
+        <button class="filter-btn btn btn-primary" data-filter="ia">IA</button>
     </section>
-    <section class="container my-5">
+
+    <!-- cartes des freelances -->
+
+    <section class="container my-5 fade-section">
         <div class="row g-4">
-            <div class="col-md-4 freelancer-card" data-category="web">
+            <div class="col-md-4 freelancer-card" data-category="ia">
                 <div class="card shadow h-100">
-                    <img src="images/ingenieur.jpeg"  class="card-img-top"  alt="">
+                    <img src="images/ingenieur.jpeg"  class="card-img-top"  alt="Jean">
                     <div class="card-body text-center">
                         <h4>Jean Gomis</h4>
                         <p class="text-primary">Ingénieur en IA</p>
@@ -63,7 +74,7 @@
             </div>
             <div class="col-md-4 freelancer-card" data-category="marketing">
                 <div class="card shadow h-100">
-                    <img src="images/resmark.jpeg"  class="card-img-top"  alt="">
+                    <img src="images/resmark.jpeg"  class="card-img-top"  alt="Aita">
                     <div class="card-body text-center">
                         <h4>Aita Ngom</h4>
                         <p class="text-primary"> Spécialiste Marketing Digital</p>
@@ -75,7 +86,7 @@
             </div>
             <div class="col-md-4 freelancer-card" data-category="design">
                 <div class="card shadow h-100">
-                    <img src="images/fdesigne.jpeg"  class="card-img-top"  alt="">
+                    <img src="images/fdesigne.jpeg"  class="card-img-top"  alt="Aissatou">
                     <div class="card-body text-center">
                         <h4>Aissatou Ba</h4>
                         <p class="text-primary">Designer graphique</p>
@@ -87,7 +98,7 @@
             </div>
             <div class="col-md-4 freelancer-card" data-category="web">
                 <div class="card shadow h-100">
-                    <img src="images/Experte.jpeg"  class="card-img-top"  alt="">
+                    <img src="images/Experte.jpeg"  class="card-img-top"  alt="Fatima">
                     <div class="card-body text-center">
                         <h4>Fatima Fall</h4>
                         <p class="text-primary">Experte en Cybersécurité</p>
@@ -99,7 +110,7 @@
             </div>
             <div class="col-md-4 freelancer-card" data-category="web">
                 <div class="card shadow h-100">
-                    <img src="images/devmob.jpeg"  class="card-img-top"  alt="">
+                    <img src="images/devmob.jpeg"  class="card-img-top"  alt="Malick">
                     <div class="card-body text-center">
                         <h4>Malick Sarr</h4>
                         <p class="text-primary">Développeur Mobile</p>
@@ -111,7 +122,7 @@
             </div>
             <div class="col-md-4 freelancer-card" data-category="web">
                 <div class="card shadow h-100">
-                    <img src="images/developeur.jpeg"  class="card-img-top"  alt="">
+                    <img src="images/developeur.jpeg"  class="card-img-top"  alt="Matar">
                     <div class="card-body text-center">
                         <h4>Matar Ndiaye</h4>
                         <p class="text-primary"> Développeur Full Stack</p>
@@ -123,7 +134,10 @@
             </div>
         </div>
     </section>
-    <section class="container my-5">
+
+    <!-- appel a l'action -->
+
+    <section class="container my-5 fade-section" >
         <div class="card shadow h-100">
             <div class="card-body text-center">
                 <h2>Construisons l'avenir ensemble</h2>
@@ -137,6 +151,9 @@
             </div>
         </div>
     </section>
+
+    <!-- footer -->
+
     <footer  class="bg-primary text-white mt-5 py-4">
         <div class="container text-center">
             <h5>Afritalent</h5>

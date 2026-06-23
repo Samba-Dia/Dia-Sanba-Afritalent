@@ -1,15 +1,16 @@
+/* variable css */
 :root {
-    primary-color: #1e3a8a;
-    secondary-color: #14b8a6;
-    dark-color: #0f172a;
-    light-color: #f8fafc;
-    text-color: #334155;
-    border-radius: 10px;
-    spacing: 1rem;
-    title-font: 'Poppins', sans-serif;
-    body-font:'Roboto', sans serif;
+    --primary-color: #1e3a8a;
+    --secondary-color: #14b8a6;
+    --dark-color: #0f172a;
+    --light-color: #f8fafc;
+    --text-color: #334155;
+    --border-radius: 10px;
+    --spacing: 1rem;
+    --title-font: 'Poppins', sans-serif;
+    --body-font:'Roboto', sans serif;
 }
-
+/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@ body{
     background-color: #f1f5f9;
     line-height: 1.6;
 }
-
+/* typographie */
 h1,h2,h3,h4,h5,h6{
     font-family: var(title-font);
     font-weight: 600;
@@ -31,7 +32,11 @@ h1,h2,h3,h4,h5,h6{
 p{
     margin-bottom: 1rem;
 }
-
+blockquote{
+    font-style: italic;
+    color: #555;
+}
+/* navbar */
 .navbar{
     background-color: var(primary-color)!important;
     padding: 15px 0;
@@ -51,7 +56,7 @@ p{
 .nav-link:hover{
     color: #14b8a6 !important;
 }
-
+/* interfaces et cartes */
 section{
     padding: 40px 0;
 }
@@ -60,12 +65,12 @@ section{
 }
 .service-card:hover{
     transform: translateY(8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15g);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .card{
     border: none;
     border-radius: var(border-radius);
-    transition: 0,3s;
+    transition: 0.3s;
 }
 .card:hover{
     transform:translateY(5px);
@@ -80,11 +85,7 @@ section{
 .btn-primary:hover{
     background-color: #0f766e;
 }
-
-blockquote{
-    font-style: italic;
-    color: #555;
-}
+/* footer */
 footer{
     background-color: var(dark-color);
     color: white;
@@ -95,10 +96,10 @@ footer a{
 footer a:hover{
     color: var(secondary-color);
 }
-
+/* bento grid */
 .bento-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,mimax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
 }
 .bento-item{
@@ -116,6 +117,7 @@ footer a:hover{
     font-weight: bold;
     color: #0d6efd;
 }
+/* responsives (media queries) */
 @media(max-width:768px) {
     .hero-section-fade-section{
         text-align: center;
@@ -145,7 +147,7 @@ footer a:hover{
         width: 50% !important;
     }
 }
-
+/* mode sombre */
 .dark-mode{
     background-color: #121212 ;
     color: white;
