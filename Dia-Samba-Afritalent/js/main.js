@@ -106,3 +106,69 @@ const counterObserver = new IntersectionObserver((entries) => {
 counters.forEach(counter => {
     counterObserver.observe(counter);
 });
+
+// const filterButtons = document.querySelectorAll(".filter-btn");
+// const cards = document.querySelectorAll(".freelancer-card");
+
+// filterButtons.forEach(button => {
+//     button.addEventListener("click", () => {
+//         const filter = button.dataset.filter;
+
+//         cards.forEach(card => {
+//             if (filter === "all" || card.dataset.category === filter) {
+//                 card.style.display = "block";
+//             } else {
+//                 card.style.display = "none";
+//             }
+//         });
+//     });
+// }); 
+ 
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    document.getElementById("prenomError").textContent = "";
+    document.getElementById("nomError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+
+    let prenom = document.getElementById("prenom").value.trim();
+    let nom = document.getElementById("nom").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let valide = true;
+
+    if (prenom === "") {
+        document.getElementById("prenomError").textContent =
+        "Le prénom est obligatoire";
+        valide = false;
+    }
+
+    if (nom === "") {
+        document.getElementById("nomError").textContent =
+        "Le nom est obligatoire";
+        valide = false;
+    }
+
+    if (!regexEmail.test(email)) {
+        document.getElementById("emailError").textContent =
+        "Email invalide";
+        valide = false;
+    }
+
+    if (message.length < 20) {
+        document.getElementById("messageError").textContent =
+        "Le message doit contenir au moins 20 caractères";
+        valide = false;
+    }
+
+    if (valide) {
+        alert("Message envoyé avec succès !");
+        form.reset();
+    }
+});
